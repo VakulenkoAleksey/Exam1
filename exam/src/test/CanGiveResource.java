@@ -1,5 +1,7 @@
 package test;
 
 public interface CanGiveResource {
-    int giveResource();
+
+    int getResource();
+    void setResource(int resource);
 }

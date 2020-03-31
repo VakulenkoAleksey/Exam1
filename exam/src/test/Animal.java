@@ -5,9 +5,13 @@ public abstract class Animal {
     protected int weight;
     protected int speed;
 
-    public void eat(){ }
+    public Animal(String name, int weight, int speed) {
+        setName(name);
+        setWeight(weight);
+        setSpeed(speed);
+    }
 
-    public String getName(String name) {
+    public String getName() {
         return this.name;
     }
 
@@ -15,15 +19,15 @@ public abstract class Animal {
         this.name = name;
     }
 
-    public int getWeight(int weight) {
-        return this.weight;
+    public int getWeight() {
+        return weight;
     }
 
     public void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public int getSpeed(int speed) {
+    public int getSpeed() {
         return this.speed;
     }
 
